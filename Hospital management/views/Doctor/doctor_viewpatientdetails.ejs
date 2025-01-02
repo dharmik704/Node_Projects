@@ -1,0 +1,55 @@
+<%- include('doctor_header') %>
+
+            <!-- Table Start -->
+            <center>
+                <div class="container-fluid pt-4 px-4">
+                    
+                    <div class="row g-3" style="justify-content: center;">
+                        <a style="color: green" href="/doctor/updateprofile/<%= locals.user._id %>">Edit <i class="fa fa-edit"></i></a>
+                        <div class="col-sm-12 col-xl-6">
+                            <div class="bg-light rounded h-100 p-4">
+                                <h6 class="mb-4">Your Profile</h6>
+                                <table class="table table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">User Name</th>
+                                            <td><%= Patient.appointmentid.name %></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Appointment Date</th>
+                                            <td><%= Patient.appointmentid.date %></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Patient Name</th>
+                                            <td><%= Patient.name %></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Email</th>
+                                            <td><%= Patient.email %></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Contact No.</th>
+                                            <td><%= Patient.phone %></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Gender</th>
+                                            <td><%= Patient.gender %></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Age</th>
+                                            <td><%= Patient.age %></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Address</th>
+                                            <td><%= Patient.address %></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+            <!-- Table End -->
+
+<%- include('doctor_footer') %>
